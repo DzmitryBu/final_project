@@ -5,7 +5,7 @@ import util.UserStatus;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-public class UserFullDTO {
+public class User {
 
     private UUID uuid;
 
@@ -21,8 +21,8 @@ public class UserFullDTO {
 
     private UserStatus status;
 
-    public UserFullDTO(UUID uuid, LocalDateTime dt_create, LocalDateTime dt_update, String mail,
-                       String fio, UserRole role, UserStatus status) {
+    public User(UUID uuid, LocalDateTime dt_create, LocalDateTime dt_update, String mail,
+                String fio, UserRole role, UserStatus status) {
         this.uuid = uuid;
         this.dt_create = dt_create;
         this.dt_update = dt_update;
